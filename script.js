@@ -32,17 +32,17 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     successMessage.style.display = 'none';
 
     if(!UserUtils.validateEmail(email)) {
-        emailError.textContent = 'Ошибка: Некорректный email';
+        emailError.textContent = 'Error: Invalid email';
         return;
     }
 
     if(!UserUtils.validatePassword(password)) {
-        passwordError.textContent = 'Пароль должен содержать не менее 8 символов, цифру, заглавную букву и специальный символ @!&?';
+        passwordError.textContent = 'The password must contain at least 8 characters, a number, an uppercase letter and the special character @!&?';
         return;
     }
 
     if (password !== confirmPassword) {
-        confirmPasswordError.textContent = 'Ошибка: Пароли не совпадают';
+        confirmPasswordError.textContent = 'Error: Passwords do not match';
         return;
     }
 
