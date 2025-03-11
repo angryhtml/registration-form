@@ -52,6 +52,6 @@ document.getElementById('registrationForm').addEventListener('submit', function(
         successMessage.style.display = 'none';
         registrationForm.style.display = 'block';
         registrationForm.reset();
-      }, 5000); // 5000 мс = 5 секунд
+      }, 5000);
 
 });
