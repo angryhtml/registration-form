@@ -1,21 +1,21 @@
-# Форма регистрации с валидацией
+# Registration Form with Validation
 
-Этот проект представляет собой интерактивную форму регистрации с валидацией данных. В нём демонстрируется использование **статических методов** в JavaScript для проверки введённых пользователем данных. После успешной регистрации пользователь видит сообщение об успехе, а форма автоматически сбрасывается через 5 секунд.
+This project is an interactive registration form with data validation. It demonstrates the use of **static methods** in JavaScript to validate user input. After successful registration, the user sees a success message, and the form automatically resets after 5 seconds.
 
-## Основные функции
-- **Валидация email**: Проверка корректности формата email.
-- **Валидация пароля**: Пароль должен содержать не менее 8 символов, цифру, заглавную букву и специальный символ (`@`, `!`, `&`).
-- **Подтверждение пароля**: Пароль и подтверждение пароля должны совпадать.
-- **Сообщение об успехе**: Отображается после успешной регистрации.
-- **Сброс формы**: Форма автоматически сбрасывается через 5 секунд.
-- **Адаптивный дизайн**: Форма и сообщение корректно отображаются на всех устройствах.
+## Key Features
+- **Email Validation:** Checks the correctness of the email format.
+- **Password Validation:** The password must contain at least 8 characters, a digit, an uppercase letter, and a special character (@, !, &).
+- **Password Confirmation:** The password and confirmation password must match.
+- **Success Message:** Displayed after successful registration.
+- **Form Reset:** The form automatically resets after 5 seconds.
+- **Responsive Design:** The form and message are displayed correctly on all devices.
 
-## Используемые технологии
-- **HTML**: Структура формы и сообщения.
-- **CSS**: Стилизация и адаптивный дизайн.
-- **JavaScript**: Логика валидации, статические методы и сброс формы.
+## Technologies Used
+- **HTML**: Structure of the form and message.
+- **CSS**: Styling and responsive design.
+- **JavaScript**: Validation logic, static methods, and form reset.
 
-## Статические методы в действии
-В проекте используются **статические методы** класса `UserUtils` для обработки логики валидации. Этот подход делает код организованным и удобным для повторного использования. Например:
-- `UserUtils.validateEmail(email)`: Проверяет корректность формата email.
-- `UserUtils.validatePassword(password)`: Проверяет сложность пароля.
+## Static Methods in Action
+The project uses **static methods** of the UserUtils class to handle validation logic. This approach makes the code organized and reusable. For example:
+- UserUtils.validateEmail(email): Checks the correctness of the email format.
+- UserUtils.validatePassword(password): Checks the complexity of the password.
